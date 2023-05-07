@@ -19,5 +19,5 @@
   mail($to_email, $subject, $message, $headers);
 
   // Redirect back to HTML page
-  header('Location: https://portfolio-ttibbs.netlify.app');
+  header('Location: index.html');
 ?>
