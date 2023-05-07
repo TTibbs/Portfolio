@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Start of navbar -->
+    <header id="home">
+      <div class="header">
+        <h1 class="gradient-text">Portfolio</h1>
+        <div class="navbar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#intro">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- End of navbar -->
+
+    <!-- Start of intro section -->
+    <section id="intro">
+      <div>
+        <div class="intro-text">
+          <h2>
+            <em>Hi, my name is <span class="name">Terry</span></em>
+          </h2>
+          <h3>
+            <i>I am a <span class="level">Junior</span> software developer</i>
+          </h3>
+        </div>
+      </div>
+      <div>
+        <img src="assets/coder.jpg" alt="intro image" />
+      </div>
+    </section>
+    <!-- End of intro section -->
+
+    <!-- Start of project section -->
+    <section id="portfolio">
+      <div
+        class="project project-img"
+        style="background-image: url('assets/password-project.png')"
+      ></div>
+      <div
+        class="project project-img"
+        style="background-image: url('assets/password-project.png')"
+      ></div>
+      <div
+        class="project project-img"
+        style="background-image: url('assets/password-project.png')"
+      ></div>
+      <div
+        class="project project-img"
+        style="background-image: url('assets/password-project.png')"
+      ></div>
+      <div
+        class="project project-img"
+        style="background-image: url('assets/password-project.png')"
+      ></div>
+      <div
+        class="project project-img"
+        style="background-image: url('assets/password-project.png')"
+      ></div>
+      <div
+        class="project project-img"
+        style="background-image: url('assets/password-project.png')"
+      ></div>
+      <div
+        class="project project-img"
+        style="background-image: url('assets/password-project.png')"
+      ></div>
+      <div
+        class="project project-img"
+        style="background-image: url('assets/password-project.png')"
+      ></div>
+    </section>
+    <!-- End of project section -->
+
+    <!-- Start of footer -->
+    <footer id="contact">
+      <div>
+        <p class="footer-text text-center">
+          View my projects on GitHub or follow me on LinkedIn/Twitter =>
+        </p>
+      </div>
+      <div class="social-links">
+        <a href=""><i id="github" class="fa-brands fa-github fa-2xl"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        <a href=""><i class="fa-brands fa-twitter fa-2xl"></i></a>
+      </div>
+      <div>
+        <button id="show-form">Contact Me</button>
+        <form id="contact-form" style="display: none">
+          <input type="text" class="subject" placeholder="Subject" />
+          <input type="email" class="email" placeholder="Email" />
+          <textarea
+            name="message-area"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </footer>
+    <!-- End of footer -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
