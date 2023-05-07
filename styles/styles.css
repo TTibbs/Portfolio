@@ -127,7 +127,6 @@ body {
 
 #home {
   padding: 2rem 3rem;
-  border: 2px solid red;
 }
 
 .header {
@@ -164,7 +163,6 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(50%, auto);
-  border: 2px solid red;
   min-height: 82vh;
 }
 
@@ -204,7 +202,6 @@ body {
   grid-auto-rows: minmax(200px, auto);
   gap: 20px;
   padding: 3rem;
-  border: 2px solid red;
 }
 
 .project {
@@ -223,7 +220,6 @@ color: white;
 }
 
 #contact {
-  border: 2px solid red;
   margin: 2rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
