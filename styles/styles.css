@@ -230,6 +230,12 @@ color: white;
   padding: 1.5rem;
 }
 
+.footer-text {
+  color: var(--primary-font);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
 .social-links {
   width: 35%;
   display: flex;
