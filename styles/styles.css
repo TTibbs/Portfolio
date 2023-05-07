@@ -42,10 +42,10 @@ a {
 
 .name:hover,
 .level:hover {
-  color:rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
 }
-  
-.gradient-text{
+
+.gradient-text {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(to right, #ff0000, #0000ff, #00ff00);
   background-size: 200% 200%;
@@ -61,15 +61,23 @@ a {
   cursor: none;
 }
 
-.gradient-text:hover{
-  color:rgba(0,0,0,0);
+.gradient-text:hover {
+  color: rgba(0, 0, 0, 0);
 }
 
 /* Keyframes */
 @keyframes rainbow {
-  0% {background-position:left}
-  50% {background-position:right}
-  100% {background-position:left}
+  0% {
+    background-position: left
+  }
+
+  50% {
+    background-position: right
+  }
+
+  100% {
+    background-position: left
+  }
 }
 
 @-webkit-keyframes bg-scrolling-reverse {
@@ -77,36 +85,43 @@ a {
     background-position: 50px 50px;
   }
 }
+
 @-moz-keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;
   }
 }
+
 @-o-keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;
   }
 }
+
 @keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;
   }
 }
+
 @-webkit-keyframes bg-scrolling {
   0% {
     background-position: 50px 50px;
   }
 }
+
 @-moz-keyframes bg-scrolling {
   0% {
     background-position: 50px 50px;
   }
 }
+
 @-o-keyframes bg-scrolling {
   0% {
     background-position: 50px 50px;
   }
 }
+
 @keyframes bg-scrolling {
   0% {
     background-position: 50px 50px;
@@ -205,18 +220,18 @@ body {
 }
 
 .project {
-background-color: #eee;
-padding: 20px;
-border-radius: 10px;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .project-img {
-background-size: cover;
-background-position: center;
+  background-size: cover;
+  background-position: center;
 }
-  
+
 ul li:hover a {
-color: white;
+  color: white;
 }
 
 #contact {
@@ -259,12 +274,12 @@ color: white;
   cursor: pointer;
 }
 
-.grid-container > div:last-child {
+.grid-container>div:last-child {
   display: flex;
   flex-direction: column;
 }
 
-.grid-container > div:last-child > * {
+.grid-container>div:last-child>* {
   margin-bottom: 10px;
 }
 
@@ -297,89 +312,173 @@ color: white;
   cursor: pointer;
 }
 
-/* Breakpoint for tablets */
-@media only screen and (max-width: 768px) {
-:root {
-  font-size: 14px;
-}
-.header {
-  margin: 10px;
-  padding: 5px;
-}
-#intro {
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.nav-item {
-  padding: 5px;
-  font-size: 0.9rem;
-}
-#portfolio {
-  grid-template-columns: repeat(2, 1fr);
-}
-#social-links {
-  scale: 0.7;
-}
-#show-form {
-  padding: 7px 14px;
-}
-}
-
-/* Breakpoint for mobile devices */
-@media only screen and (max-width: 710px) {
-  :root {
-    font-size: 0.8rem;
-  }
+/* Starting breakpoint */
+@media screen and (min-width:769px) and (max-width: 1200px) {
   .header {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 10px;
+    padding: 5px;
   }
-  .nav-item {
-    padding: 1rem;
-    font-size: 0.8rem;
-  }
+
   #intro {
-    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+    font-size: 1.4rem;
+  }
+
+  #intro img {
+    scale: 0.75;
+  }
+
+  .intro-text {
+    font-size: 1.8rem;
+  }
+
+  .nav-item {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+
+  #portfolio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #contact {
+    font-size: 1.1rem;
+  }
+
+  .footer-text {
+    font-size: 1.5rem;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+  }
+
+  #show-form {
+    padding: 14px 25px;
+    font-size: .9rem;
   }
 }
 
-/* Extra breakpoint for navbar */
-@media screen and (min-width:561px) and (max-width: 709px) {
+/* Tablet breakpoint */
+@media screen and (min-width:561px) and (max-width: 768px) {
+
   .header,
   .nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
+
+  .nav {
+    gap: 5px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .link {
+    font-size: .9rem;
+  }
+
   #intro {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
   }
+
+  .intro-text {
+    font-size: 1.6rem;
+  }
+
   #intro img {
     scale: 0.5;
+  }
+
+  #portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #contact {
+    font-size: .9rem;
+  }
+
+  .footer-text {
+    font-size: 1.1rem;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+  }
+
+  #show-form {
+    padding: 9px 17px;
+    font-size: .9rem;
   }
 }
 
 @media screen and (max-width: 560px) {
+  #home {
+    padding: 1rem 2rem;
+  }
+
+  .navbar {
+    margin-top: 5px;
+  }
+
   .header,
   .nav {
     flex-direction: column;
     gap: 5px;
   }
+
   .header h1 {
     font-size: 1.8rem;
   }
+
   .link {
     font-size: 1rem;
   }
+
+  #intro {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 2rem;
+    margin-top: 0;
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
+  }
+
   #portfolio {
     grid-template-columns: repeat(1, 1fr);
   }
-  #intro {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 2rem;
-  }
+
   #intro img {
     scale: 0.5;
+  }
+
+  #contact {
+    font-size: .7rem;
+  }
+
+  .footer-text {
+    font-size: .9rem;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #show-form {
+    padding: 5px 11px;
+    font-size: .9rem;
   }
 }
