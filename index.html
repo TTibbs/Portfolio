@@ -121,17 +121,18 @@
       </div>
       <div>
         <button id="show-form">Contact Me</button>
-        <form id="contact-form" style="display: none">
+        <form id="contact-form" action="send-email.php" method="post" style="display: none">
           <input
             type="text"
             class="subject"
             placeholder="Subject"
             required
             maxlength="30"
+            name="subject"
           />
-          <input type="email" class="email" placeholder="Email" required />
+          <input type="email" class="email" placeholder="Email" required name="email" />
           <textarea
-            name="message-area"
+            name="message"
             id="message"
             cols="30"
             rows="10"
@@ -141,7 +142,7 @@
           <button type="submit">Send</button>
         </form>
       </div>
-    </footer>
+    </footer>    
     <!-- End of footer -->
 
     <script src="script.js"></script>
