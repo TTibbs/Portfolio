@@ -121,9 +121,18 @@
       </div>
       <div>
         <button id="show-form">Contact Me</button>
-        <form id="contact-form" style="display: none">
-          <input type="text" class="subject" placeholder="Subject" />
-          <input type="email" class="email" placeholder="Email" />
+        <form id="contact-form">
+          <input
+            type="text"
+            class="subject"
+            placeholder="Subject"
+            required
+            maxlength="30"
+          />
+          <input type="email" class="email" placeholder="Email" required />
+          <span class="error-message" style="display: none"
+            >Please enter a valid email address</span
+          >
           <textarea
             name="message-area"
             id="message"
