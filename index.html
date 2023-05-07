@@ -121,7 +121,7 @@
       </div>
       <div>
         <button id="show-form">Contact Me</button>
-        <form id="contact-form">
+        <form id="contact-form" style="display: none">
           <input
             type="text"
             class="subject"
@@ -130,9 +130,6 @@
             maxlength="30"
           />
           <input type="email" class="email" placeholder="Email" required />
-          <span class="error-message" style="display: none"
-            >Please enter a valid email address</span
-          >
           <textarea
             name="message-area"
             id="message"
